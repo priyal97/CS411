@@ -10,5 +10,3 @@ A database will be used to log previous daily briefings, as well as a rating of 
 This project will take input from the user of their home address. Based on this input, we will determine their polling 
 locations, and route them to this location. Authentication will take place via Uber/Lyft accounts, and our database 
 will hold the precinct and ward data for voters in the Greater Boston area. 
-
-
