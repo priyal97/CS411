@@ -6,6 +6,9 @@ Spotify playlist based on Horoscope
 
 Google Calendar Exams & Mercury in Retrograde -> Preventing failure 
 
-Rotten Tomatoes & Horoscope Movie recommendations 
+Rotten Tomatoes & ______ for Movie recommendations 
+        Authentication (yes)
 
-Weed Strain and Retail Locations 
+Uber/Lyft/Directions to closest voting locations (Boston data set)
+    Authentication (yes)
+
