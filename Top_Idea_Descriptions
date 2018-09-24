@@ -6,6 +6,9 @@ It will pull in current weather information, daily events from Google Calendar, 
 as well as a Daily Mix playlist from Spotify. Authentication will take place via both Google and Spotify. 
 A database will be used to log previous daily briefings, as well as a rating of the day as completed by the user. 
 
-Transit to Closest Voting Location
+2) Voting Location Finder
+This project will take input from the user of their home address. Based on this input, we will determine their polling 
+locations, and route them to this location. Authentication will take place via Uber/Lyft accounts, and our database 
+will hold the precinct and ward data for voters in the Greater Boston area. 
 
 
