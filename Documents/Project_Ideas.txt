@@ -1,10 +1,6 @@
+Top 4 Ideas:
+
 Bar Crawl with Uber/Lyft and BARZZ
-
-Spotofy Playlist based on Instagram Account 
-
-Spotify playlist based on Horoscope 
-
-Google Calendar Exams & Mercury in Retrograde -> Preventing failure 
 
 Rotten Tomatoes & ______ for Movie recommendations 
         Authentication (yes)
@@ -12,3 +8,6 @@ Rotten Tomatoes & ______ for Movie recommendations
 Uber/Lyft/Directions to closest voting locations (Boston data set)
     Authentication (yes)
 
+Good Morning (Google Calenar, Weather, News API, Spotify Playlist, Day Rating)
+    Authentication (Google)
+    Database with History 
