@@ -1,6 +1,6 @@
 Top 2 Idea Descriptions:
 
-1) Daily Briefing App:
+1) Daily Briefing App: (Selected by Professor)
 This project will aggregate a number of important data sources into an easily readable format.
 It will pull in current weather information, daily events from Google Calendar, and top news stories
 as well as a Daily Mix playlist from Spotify. Authentication will take place via both Google and Spotify. 
