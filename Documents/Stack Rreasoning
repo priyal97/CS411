@@ -1,0 +1,6 @@
+As a group we felt the most comfortable using java script for both our backend
+and frontend because we felt the Node.js express framework for the backend felt the most familiar
+and the easiest for us call API’s with. For the front end we are using React framework to keep the
+languages on both ends consistent and because it seemed the quickest and most straight forward to learn. 
+Other Backends we considered were Python with Flask but we worried that we would run into problems and complications
+later on as the project grows and gets more complicated. 
