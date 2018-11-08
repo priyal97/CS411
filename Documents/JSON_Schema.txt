@@ -2,10 +2,15 @@
   "$id": "Biagio DeSimone", //user's name
   "title": "Person",
   "type": "object",
+  "required" : ["weatherCity" , "spotifyEmail", ]
   "properties": {
+    "name": {
+        "type": "string",
+        "description": "Must be a string and is required"
+            },
     "weatherCity": {
       "type": "string",
-      "description": "The name of a city the user wants weather data for."
+      "description": "The name of a city the user wants weather data for, is required."
     },
     "weatherZip":{
         "type": "double" ,
@@ -21,8 +26,7 @@
     }
     "spotifyEmail":{
         "type" : "string"
-        "description" : "Email associated with Spotify account."
+        "description" : "Email associated with Spotify account, is required."
     }
-    
   }
 }
