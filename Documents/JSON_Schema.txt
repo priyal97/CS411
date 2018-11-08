@@ -1,0 +1,28 @@
+{
+  "$id": "Biagio DeSimone", //user's name
+  "title": "Person",
+  "type": "object",
+  "properties": {
+    "weatherCity": {
+      "type": "string",
+      "description": "The name of a city the user wants weather data for."
+    },
+    "weatherZip":{
+        "type": "double" ,
+        "description" : "The zip code of the city the user wants wether for."
+    }
+    "weatherTemp": {
+      "type": "double",
+      "description": "The temperature of requested city in Fahrenheit."
+    }
+    "currentTitle": {
+      "description": "Currently playing song title for the Spotify account linked",
+      "type": "string",
+    }
+    "spotifyEmail":{
+        "type" : "string"
+        "description" : "Email associated with Spotify account."
+    }
+    
+  }
+}
