@@ -4,6 +4,14 @@
   "type": "object",
   "required" : ["weatherCity" , "spotifyEmail", ]
   "properties": {
+    "isLoggedInSpotify"{
+        "type" : "boolean",
+        "description" : "If user is logged into spotify or not"
+    }
+    "isLoggedInCalendar"{
+        "type" : "boolean",
+        "description" : "If user is logged into calendar or not"
+    }
     "name": {
         "type": "string",
         "description": "Must be a string and is required"
