@@ -7,10 +7,10 @@
     "name": {
         "type": "string",
         "description": "Must be a string and is required"
-            },
+    },
     "weatherCity": {
-      "type": "string",
-      "description": "The name of a city the user wants weather data for, is required."
+        "type": "string",
+        "description": "The name of a city the user wants weather data for, is required."
     },
     "weatherZip":{
         "type": "double" ,
