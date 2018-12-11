@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/css/news.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+<style>
+.editor-stage .snow {
+  height:50px;
+  background: #fff;
+}
+.snow{
+  position:fixed;
+  pointer-events:none;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  height:100vh;
+  background: none;
+  background-image: url('https://s3-eu-west-1.amazonaws.com/static-ressources/s1.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s2.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s3.png');
+  z-index:100;
+  -webkit-animation: snow 10s linear infinite;
+  -moz-animation: snow 10s linear infinite;
+  -ms-animation: snow 10s linear infinite;
+  animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+h1 {
+   font-family: Snell Roundhand, cursive;
+   font-size: 3.5em;
+  color:white;
+  background-color: rgb(4, 35, 86, 0.5);
+}
+p{
+  font-family: Snell Roundhand, cursive;
+   font-size: 2em;
+
+}
+body {
+        background-image: url("https://images.pexels.com/photos/773594/pexels-photo-773594.jpeg?cs=srgb&dl=branches-cold-conifers-773594.jpg&fm=jpg");
+        background-repeat: no-repeat;
+        background-size: 1450px 800px;
+        background-attachment: fixed;
+} 
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+}
+</style>
+    
+  </head>
+  <body bgcolor="#E6E6FA">
+          <h1 align="center">Welcome to your Daily Dashboard, <%=user%>!</h1>
+          <br/>
+          <br/>
+           <div class="snow"></div>
+           <div class="row">
+            <div class="column" style="background-color:transparent;">
+              <iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX0Yxoavh5qJV" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="column" style="background-color:transparent;">
+            <fieldset>
+            <form id="weather_form" action="/weather" method="post">
+            <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
+            <input id="get_weather" type="submit" class="ghost-button" value="Get Weather">
+              </form>
+                 <% if(weather !== null){ %>
+                  <p><%= weather %></p>
+                <% } %>
+
+                <% if(error !== null){ %>
+                  <p><%= error %></p>
+                <% } %>
+
+              
+            <br/>
+            <form id="news_form" action="/news" method="post">
+            <input type="submit" class="ghost-button" value="Get Top News Headlines" >
+            </form>
+            <br/>
+            <form action="/logout" method="get">
+              <input type="submit" class="ghost-button" value="Logout" >
+            </form>
+             <br/>
+              <br/>
+            </fieldset>
+            </div>         
+          <br/>
+          <br/>
+          <br/>
+        </div>
+  </body>
+</html>
