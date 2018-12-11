@@ -1,8 +1,0 @@
-extends layout
-
-block content
-  h1= title
-  form#formAddUser(name="displayweather",method="post",action="/displayweather")
-    input#inputUserName(name="city", type="text", class="ghost-input", placeholder="Enter a City" required)
-    button#btnSubmit(type="submit" class="ghost-button" value="Get Weather") submit
-  
