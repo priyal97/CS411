@@ -1,0 +1,7 @@
+These are the things we will be using for our database and cache:
+
+Cache: Redis
+Database: MongoDB
+
+In the JSON_Schema.txt, we wrote the general layout for the MondoDB database. 
+In the cache diagram.mdj file, is our sequence diagram for the cache made in StarUML. 

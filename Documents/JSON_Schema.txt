@@ -1,0 +1,40 @@
+{
+  "$id": "Biagio DeSimone", //user's name
+  "title": "Person",
+  "type": "object",
+  "required" : ["weatherCity" , "spotifyEmail", ]
+  "properties": {
+    "isLoggedInSpotify"{
+        "type" : "boolean",
+        "description" : "If user is logged into spotify or not"
+    }
+    "isLoggedInCalendar"{
+        "type" : "boolean",
+        "description" : "If user is logged into calendar or not"
+    }
+    "name": {
+        "type": "string",
+        "description": "Must be a string and is required"
+    },
+    "weatherCity": {
+        "type": "string",
+        "description": "The name of a city the user wants weather data for, is required."
+    },
+    "weatherZip":{
+        "type": "double" ,
+        "description" : "The zip code of the city the user wants wether for."
+    }
+    "weatherTemp": {
+      "type": "double",
+      "description": "The temperature of requested city in Fahrenheit."
+    }
+    "currentTitle": {
+      "description": "Currently playing song title for the Spotify account linked",
+      "type": "string",
+    }
+    "spotifyEmail":{
+        "type" : "string"
+        "description" : "Email associated with Spotify account, is required."
+    }
+  }
+}
